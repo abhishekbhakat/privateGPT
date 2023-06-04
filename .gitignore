@@ -172,6 +172,7 @@ cython_debug/
 source_documents/
 source_documents_copy/
 tests/
+tests2/
 
 env310/
 .vscode/
