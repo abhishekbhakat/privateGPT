@@ -1,0 +1,33 @@
+
+
+
+Uninstall
+
+```
+pip uninstall llama-cpp-python
+```
+
+Set Env Variables
+
+```
+set LLAMA_CUBLAS=1
+set CMAKE_ARGS=-DLLAMA_CUBLAS=on
+set FORCE_CMAKE=1
+```
+
+Install again
+
+```
+pip install llama-cpp-python --no-cache-dir --verbose
+```
+
+
+One liner
+
+```
+$Env:CMAKE_ARGS="-DLLAMA_CUBLAS=on";  $Env:FORCE_CMAKE=1; pip3 uninstall llama-cpp-python; pip3 install llama-cpp-python
+```
+
+`pip uninstall langchain; pip install langchain` this brings you up to langchain 0.0.172 importantly this adds the gpu layers parameter llama-cpp: add gpu layers parameter 
+https://github.com/hwchase17/langchain/pull/4739
+
